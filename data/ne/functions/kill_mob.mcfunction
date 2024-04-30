@@ -13,10 +13,11 @@ execute if score #loot_random ne > #current_cd ne run return -1
 
 ##add score
 scoreboard players add @s ne_points 2
+execute if score @s ne_points matches 512.. run function ne:player_finish
 
 ##give item
 function ne:give_item with storage ne:data mob_drop
 
 ##effect
-execute on target at @s run playsound particle.soul_escape player @a ~ ~ ~ 1 1
-execute on target at @s run particle soul ~ ~0.5 ~ ~0.5 ~0.5 ~ 0 20
+playsound item.trident.return player @s ~ ~ ~ 1 1.3
+particle wax_off ~ ~0.5 ~ 2 1 2 0 20

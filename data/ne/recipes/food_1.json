@@ -4,14 +4,34 @@
   "show_notification": true,
   "key": {
     "#": {
-      "item": "minecraft:wheat"
+      "item": "minecraft:golden_carrot"
+    },
+    "-": {
+      "item": "minecraft:pumpkin_pie"
+    },
+    "+": {
+      "item": "minecraft:baked_potato"
+    },
+    "=": {
+      "item": "minecraft:milk_bucket"
+    },
+    "*": {
+      "item": "minecraft:honey_bottle"
+    },
+    "$": {
+      "item": "minecraft:egg"
+    },
+    "%": {
+      "item": "minecraft:mushroom_stew"
     }
   },
   "pattern": [
-    "###"
+    "#-+",
+    "=*$",
+    " % "
   ],
   "result": {
-    "item": "minecraft:paper",
+    "item": "minecraft:knowledge_book",
     "count": 1
   }
 }

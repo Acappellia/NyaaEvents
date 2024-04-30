@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "white_give": {
+            "trigger": "location"
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "ne:food_1",
+            "ne:food_2",
+            "ne:food_3"
+        ]
+    }
+}

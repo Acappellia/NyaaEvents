@@ -4,14 +4,28 @@
   "show_notification": true,
   "key": {
     "#": {
-      "item": "minecraft:wheat"
+      "item": "minecraft:milk_bucket"
+    },
+    "-": {
+      "item": "minecraft:honey_bottle"
+    },
+    "+": {
+      "item": "minecraft:cake"
+    },
+    "=": {
+      "item": "minecraft:flowering_azalea_leaves"
+    },
+    "*": {
+      "item": "minecraft:water_bucket"
     }
   },
   "pattern": [
-    "###"
+    " # ",
+    "-+=",
+    " * "
   ],
   "result": {
-    "item": "minecraft:paper",
+    "item": "minecraft:knowledge_book",
     "count": 1
   }
 }

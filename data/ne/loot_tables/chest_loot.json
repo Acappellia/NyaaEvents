@@ -1,5 +1,5 @@
 {
-    "type": "generic",
+    "type": "chest",
     "pools": [
         {
             "rolls": 1,
@@ -7,41 +7,37 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "iron_ingot",
+                    "name": "prismarine_crystals",
                     "functions": [
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": [
-                                {
-                                    "text": "掉落物",
-                                    "color": "white",
-                                    "italic": false
-                                }
-                            ]
+                            "name": {
+                                "text": "劳动者晶石",
+                                "italic": false,
+                                "color": "#00FF88"
+                            }
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "replace": true,
                             "lore": [
-                                [
-                                    {
-                                        "text": "第一行lore",
-                                        "color": "white",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "第二行lore",
-                                        "color": "white",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "第三行lore",
-                                        "color": "white",
-                                        "italic": false
-                                    }
-                                ]
+                                {
+                                    "text": "由汗水凝结而成的水晶",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "是辛勤劳动的证明！！！",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "（其实就是汗结晶了）",
+                                    "italic": false,
+                                    "color": "dark_gray"
+                                }
                             ]
                         },
                         {
@@ -53,78 +49,94 @@
             ]
         },
         {
-            "rolls": {
-                "min": 0,
-                "max": 2
-            },
+            "rolls": 1,
             "bonus_rolls": 0.0,
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:netherite_scrap",
+                    "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 3
-                            }
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "mending",
+                                "unbreaking",
+                                "swift_sneak",
+                                "soul_speed",
+                                "sharpness",
+                                "infinity",
+                                "loyalty",
+                                "protection",
+                                "efficiency",
+                                "quick_charge"
+                            ]
+                        },
+                        {
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "mending",
+                                "unbreaking",
+                                "swift_sneak",
+                                "soul_speed",
+                                "sharpness",
+                                "infinity",
+                                "loyalty",
+                                "protection",
+                                "efficiency",
+                                "quick_charge"
+                            ]
                         }
                     ],
                     "weight": 5
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:raw_iron_block",
+                    "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ],
-                    "weight": 5
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:raw_gold_block",
-                    "functions": [
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "mending",
+                                "unbreaking",
+                                "swift_sneak",
+                                "soul_speed",
+                                "sharpness",
+                                "infinity",
+                                "loyalty",
+                                "protection",
+                                "efficiency",
+                                "quick_charge"
+                            ]
+                        },
                         {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ],
-                    "weight": 5
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:diamond",
-                    "functions": [
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "mending",
+                                "unbreaking",
+                                "swift_sneak",
+                                "soul_speed",
+                                "sharpness",
+                                "infinity",
+                                "loyalty",
+                                "protection",
+                                "efficiency",
+                                "quick_charge"
+                            ]
+                        },
                         {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 6
-                            }
-                        }
-                    ],
-                    "weight": 5
-                },
-                {
-                    "type": "item",
-                    "name": "minecraft:shulker_shell",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "mending",
+                                "unbreaking",
+                                "swift_sneak",
+                                "soul_speed",
+                                "sharpness",
+                                "infinity",
+                                "loyalty",
+                                "protection",
+                                "efficiency",
+                                "quick_charge"
+                            ]
                         }
                     ],
                     "weight": 5
@@ -150,6 +162,86 @@
                         }
                     ],
                     "weight": 5
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 2
+            },
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:netherite_scrap",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:raw_iron_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:raw_gold_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "weight": 8
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:shulker_shell",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "weight": 8
                 },
                 {
                     "type": "item",
@@ -172,16 +264,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:book",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 5,
-                                "max": 10
-                            }
-                        }
-                    ],
+                    "name": "minecraft:nether_star",
                     "weight": 5
                 }
             ]

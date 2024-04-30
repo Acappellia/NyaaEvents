@@ -4,14 +4,34 @@
   "show_notification": true,
   "key": {
     "#": {
-      "item": "minecraft:wheat"
+      "item": "minecraft:sweet_berries"
+    },
+    "-": {
+      "item": "minecraft:apple"
+    },
+    "+": {
+      "item": "minecraft:melon_slice"
+    },
+    "=": {
+      "item": "minecraft:glow_berries"
+    },
+    "*": {
+      "item": "minecraft:honey_block"
+    },
+    "$": {
+      "item": "minecraft:carrot"
+    },
+    "%": {
+      "item": "minecraft:powder_snow_bucket"
     }
   },
   "pattern": [
-    "###"
+    "#-+",
+    "=*$",
+    "%%%"
   ],
   "result": {
-    "item": "minecraft:paper",
+    "item": "minecraft:knowledge_book",
     "count": 1
   }
 }

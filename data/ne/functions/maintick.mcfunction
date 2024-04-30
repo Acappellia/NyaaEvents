@@ -1,1 +1,0 @@
-execute as @a unless score @s ne_points matches 1.. at @s run function ne:player_init
