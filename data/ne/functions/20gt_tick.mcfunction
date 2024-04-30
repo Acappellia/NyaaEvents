@@ -1,0 +1,1 @@
+scoreboard players add @a ne_killcd 1

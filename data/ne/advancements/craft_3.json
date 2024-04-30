@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "craft_food": {
+            "trigger": "recipe_crafted",
+            "conditions": {
+                "recipe_id": "ne:food_3"
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:craft_3"
+    }
+}

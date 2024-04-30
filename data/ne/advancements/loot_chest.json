@@ -1,0 +1,123 @@
+{
+    "criteria": {
+        "gen_1": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_armorer"
+            }
+        },
+        "gen_2": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_butcher"
+            }
+        },
+        "gen_3": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_cartographer"
+            }
+        },
+        "gen_4": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_desert_house"
+            }
+        },
+        "gen_5": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_fisher"
+            }
+        },
+        "gen_6": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_fletcher"
+            }
+        },
+        "gen_7": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_mason"
+            }
+        },
+        "gen_8": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_plains_house"
+            }
+        },
+        "gen_9": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_savanna_house"
+            }
+        },
+        "gen_10": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_shepherd"
+            }
+        },
+        "gen_11": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_snowy_house"
+            }
+        },
+        "gen_12": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_taiga_house"
+            }
+        },
+        "gen_13": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_tannery"
+            }
+        },
+        "gen_14": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_temple"
+            }
+        },
+        "gen_15": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_toolsmith"
+            }
+        },
+        "gen_16": {
+            "trigger": "player_generates_container_loot",
+            "conditions": {
+                "loot_table": "minecraft:chests/village/village_weaponsmith"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "gen_1",
+            "gen_2",
+            "gen_3",
+            "gen_4",
+            "gen_5",
+            "gen_6",
+            "gen_7",
+            "gen_8",
+            "gen_9",
+            "gen_10",
+            "gen_11",
+            "gen_12",
+            "gen_13",
+            "gen_14",
+            "gen_15",
+            "gen_16"
+        ]
+    ],
+    "rewards": {
+        "function": "ne:open_loot"
+    }
+}

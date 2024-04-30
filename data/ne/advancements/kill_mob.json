@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "kill_zombie":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#ne:hostile"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:kill_mob"
+    }
+}
