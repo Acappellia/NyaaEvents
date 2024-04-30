@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "interact_trader": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "wandering_trader"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ne:interact_trader"
+    }
+}
