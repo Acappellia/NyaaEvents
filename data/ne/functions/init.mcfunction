@@ -10,6 +10,7 @@ scoreboard objectives add ne_pid dummy
 scoreboard objectives add ne_killcd dummy
 scoreboard objectives add ne_points dummy
 scoreboard objectives add ne_finish dummy
+scoreboard objectives add ne_comp dummy
 
 #define score_holder #player_id
 execute unless score #player_id ne matches -2147483648..2147483647 run scoreboard players set #player_id ne -1

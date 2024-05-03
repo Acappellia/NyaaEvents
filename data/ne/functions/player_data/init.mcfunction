@@ -23,6 +23,7 @@ setblock 0 -64 0 bedrock
 data modify storage ne:player players append value {}
 data modify storage ne:player players[-1].playerid set from storage ne:player uuid_check[0].playerid
 
-scoreboard players set @s ne_killcd 600
+scoreboard players set @s ne_killcd 10600
 scoreboard players set @s ne_points 20
+scoreboard players set @s ne_comp 1
 function ne:show_eventpage
